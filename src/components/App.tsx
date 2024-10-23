@@ -1,3 +1,5 @@
+import '../styles/styles.scss';
+
 import { HashRouter } from 'react-router-dom';
 import MultiPageLayout from './layouts/MultiPageLayout';
 import SinglePageLayout from './layouts/SinglePageLayout';

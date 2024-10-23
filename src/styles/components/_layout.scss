@@ -1,0 +1,40 @@
+@use 'bootstrap/scss/bootstrap.scss';
+
+header {
+  @extend .border-bottom;
+  @extend .sticky-top;
+}
+
+main {
+  &.multi-page {
+    @extend .container;
+    @extend .py-3;
+
+    h2 {
+      @extend .border-bottom;
+    }
+  }
+
+  &.single-page {
+    article {
+      @extend .border-bottom;
+
+      &:nth-child(even) {
+        @extend .bg-light;
+      }
+    }
+
+    h2 {
+      @extend .border-bottom;
+      @extend .mb-0;
+      @extend .py-3;
+      @extend .text-center;
+    }
+
+    section {
+      @extend .container;
+      @extend .my-5;
+      @extend .py-5;
+    }
+  }
+}

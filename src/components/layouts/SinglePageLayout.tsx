@@ -1,12 +1,13 @@
 export default function SinglePageLayout(): JSX.Element {
   return (
-    <main>
-      <h2>Single-Page Layout</h2>
+    <main className="single-page">
       <article>
-        <h3>Home</h3>
+        <h2>Home</h2>
+        <section></section>
       </article>
       <article>
-        <h3>About</h3>
+        <h2>About</h2>
+        <section></section>
       </article>
     </main>
   );
